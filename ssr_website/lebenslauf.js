@@ -8,11 +8,10 @@ http
       response.writeHead(200, { "Content-Type": "text/html" });
       const cv = filesystem.readFileSync("cv.html");
       response.end(cv);
-    }
-    if (url == "/") {
+    } else if (url.match("cv.css")) {
       response.writeHead(200, { "Content-Type": "text/css" });
-      const cvcss = filesystem.readFileSync("cv.css");
-      response.end(cvcss);
+      const css = filesystem.readFileSync("cv.css");
+      response.end(css);
     } else if (url == "/jobs") {
       response.writeHead(200, { "Content-Type": "text/html" });
       const jobs = filesystem.readFileSync("jobs.html");
