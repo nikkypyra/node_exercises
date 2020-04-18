@@ -1,0 +1,26 @@
+{
+  "name": "node_exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node ./ssr_website/lebenslauf.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kristinmatzies/node_exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kristinmatzies/node_exercises/issues"
+  },
+  "homepage": "https://github.com/kristinmatzies/node_exercises#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5"
+  }
+}
